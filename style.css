@@ -1,0 +1,160 @@
+@font-face{
+    src: url(instrucoes/fonts/static/Inter-Bold.ttf);
+    font-family: "Inter bold";
+}
+
+@font-face{
+    src: url(instrucoes/fonts/static/Inter-SemiBold.ttf);
+    font-family: "Inter semi";
+}
+
+@font-face{
+    src: url(instrucoes/fonts/static/Inter-Regular.ttf);
+    font-family: "Inter regular";
+}
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: hsl(0, 0%, 8%);
+}
+
+
+main {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+
+@media screen and (max-width: 749px){
+
+    .container{
+        width: 20em;
+        height: 33em;
+        text-align: center;
+        border-radius: 1em;
+        color: white;
+        background-color: hsl(0, 0%, 12%);
+        display: flex;
+        align-items: center;
+    }
+
+    .main{
+        height: 25em;
+        width: 19em;
+        margin: auto;
+    }
+
+    img{
+        width: 5em;
+        height: 5em;
+        border-radius: 50%;
+        margin-bottom: 1em;
+    }
+
+    #nome{
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+        font-family: "Inter bold"
+    }
+
+    #local{
+        font-size: 0.8em;
+        margin-bottom: 1.5em;
+        color: hsl(75, 94%, 57%);
+        font-family: "Inter semi";
+    }
+
+    #desc{
+        font-size: 0.9em;
+        margin-bottom: 1em;
+        font-family: "Inter regular";
+    }
+
+    button{
+        display: block;
+        width: 20em;
+        height: 2.7em;
+        margin: 0.9em auto;
+        border: none;
+        border-radius: 0.6em;
+        color: hsl(0, 0%, 100%);
+        background-color: hsl(0, 0%, 20%);
+    }
+
+    button:hover{
+        cursor: pointer;
+        color: black;
+        background-color: greenyellow;
+    }
+
+} /*Mobile*/
+
+@media screen and (min-width: 750px){
+    .container{
+        color: white;
+        width: 25em;
+        height: 37em;
+        background-color: hsl(0, 0%, 12%);
+        text-align: center;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main{
+        width: 25em;
+        height: 30em;
+    }
+
+    .main p{
+        margin-top: 0.5em;
+    }
+
+    #nome{
+        font-size: 1.5em;
+        font-family: "Inter bold", sans-serif;
+    }
+
+    #local{
+        font-size: 0.8em;
+        font-family: "Inter semi";
+        margin-bottom: 0.5em;
+        color: hsl(75, 94%, 57%);
+    }
+
+    #desc{
+        font-size: 0.8em;
+        font-family: "Inter regular";
+    }
+
+    img{
+        width: 5em;
+        height: 5em;
+        border-radius: 50%;
+        margin-bottom: 0.5em;
+    }
+
+    button{
+        display: block;
+        margin: 1.4em auto;
+        width: 20em;
+        height: 3.4em;
+        border-radius: 1em;
+        color: hsl(0, 0%, 100%);
+        background-color: hsl(0, 0%, 20%);
+        border: none;
+    }
+
+    button:hover{
+        cursor: pointer;
+        color: black;
+        background-color: greenyellow;
+    }
+} /*Desktop*/
